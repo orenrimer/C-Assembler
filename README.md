@@ -20,9 +20,32 @@ then run the file
 
 
 ## Instruction Structure
-Every software *instruction* is encoded into a few *words* in memory (max is 5 *words*).
-The first word is of the following structure:
+Every software *instruction* is encoded into a up to 5 *words* in memory. The first word always has the following structure:
 
 |  9&emsp;8&emsp;7&emsp;6  |  5&emsp;4  |  3&emsp;2  |  1&emsp;0  |
 | ------------------------ | ---------- | ---------- | ---------- |
 |          Opcode          | Source operand addressing type | Destination operand addressing type | E, R, A
+
+
+
+## Commands
+The commands allowed in bits 6-9 are:
+
+| Opcode (decimal) | Command Name |
+| ---------------- | ------------ |
+|	0	|	mov	|
+|	1	|	cmp	|
+|	2	|	add	|
+|	3	|	sub	|
+|	4	|	not	|
+|	5	|	clr	|
+|	6	|	lea	|
+|	7	|	inc	|
+|	8	|	dec	|
+|	9	|	jmp	|
+|	10	|	bne	|
+|	11	|	get	|
+|	12	|	prn	|
+|	13	|	jsr	|
+|	14	|	rts	|
+|	15	|	hlt	|
