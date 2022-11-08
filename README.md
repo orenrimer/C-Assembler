@@ -28,8 +28,8 @@ Every software *instruction* is encoded into a up to 5 *words* in memory. The fi
 
 
 
-## Commands
-The commands allowed in bits 6-9 are:
+## Instructions
+This assembler supports 16 cutom instructions, each instruction op will be stored in bits 6-9 of the first mechine word:
 
 | Opcode (decimal) | Command Name |
 | ---------------- | ------------ |
